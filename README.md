@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/aeldar/simple-object-transformer.svg?branch=master)](https://travis-ci.org/aeldar/simple-object-transformer)
 
+[![NPM](https://nodei.co/npm/simple-object-transformer.png)](https://nodei.co/npm/simple-object-transformer/)
+
 Simple Object Transformer
 =========================
 
