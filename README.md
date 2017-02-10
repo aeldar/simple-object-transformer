@@ -29,6 +29,11 @@ Examples
 --------
 TODO (see tests)
 
+Special notes
+-------------
+To use it as a library you should add "stage-0" preset to your babel configuration,
+ because of object destructuring being used in the code.
+
 Author
 ------
 Eldar A. <eldar.aliyev8@gmail.com>
