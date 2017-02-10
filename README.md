@@ -71,7 +71,6 @@ TODO
 ----
 * implement 'undefined' rule.
 * add eslint
-* add travis integration
 
 Author
 ------
