@@ -25,6 +25,11 @@ I.e. it takes _Rules_, and returns a _Converter_, that expects only _Source_ obj
 In addition, ordinary __converter__ could be imported by name. It expects both
 _Rules_ and _Source_ objects as arguments.
 
+Usage with flowtypes
+--------------------
+Import module functions from __src__ directory of the package, instead of a default
+(which is compiled to ES5 version inside __dist__ directory)
+
 Examples
 --------
 TODO (see tests)
