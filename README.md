@@ -37,7 +37,8 @@ TODO (see tests)
 Special notes
 -------------
 To use it as a library you should add "stage-0" preset to your babel configuration,
- because of object destructuring being used in the code.
+ because of object destructuring being used in the code. Also you need
+ babel's __transform-flow-strip-types__ plugin as the code uses flowtype.
  
 TODO
 ----

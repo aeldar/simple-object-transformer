@@ -8,8 +8,8 @@
     "init": "mkdir dist",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && npm run init",
-    "build": "babel lib/index.js -o dist/index.js",
-    "test": "mocha --compilers js:babel-register lib/**/*.spec.js",
+    "build": "babel src/index.js -o dist/index.js",
+    "test": "mocha --compilers js:babel-register src/**/*.spec.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
   "keywords": [
