@@ -8,7 +8,9 @@
     "init": "mkdir dist",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean && npm run init",
-    "build": "babel src/index.js -o dist/index.js",
+    "build:commonjs": "babel src/index.js -o dist/index.js",
+    "build:umd": "browserify src/index.js -t babelify --outfile dist/index.umd.js --standalone SimpleObjectTransformer",
+    "build": "npm run build:commonjs && npm run build:umd",
     "test": "mocha --compilers js:babel-register src/**/*.spec.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
@@ -32,6 +34,8 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-register": "^6.22.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.0.0",
     "chai": "^3.5.0",
     "flow-bin": "^0.38.0",
     "mocha": "^3.2.0"

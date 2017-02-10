@@ -2,7 +2,7 @@
 
 import { expect } from 'chai';
 
-import { transformerFactory, transformer } from './index';
+import { transformerFactory, transformer } from '../dist/index';
 
 const RULES = Object.freeze({
   id: 'productId',
