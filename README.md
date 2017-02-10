@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aeldar/simple-object-transformer.svg?branch=master)](https://travis-ci.org/aeldar/simple-object-transformer)
+
 Simple Object Transformer
 =========================
 
