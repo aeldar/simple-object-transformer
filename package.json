@@ -1,15 +1,26 @@
 {
   "name": "simple-object-transformer",
+  "title": "Simple Object Transformer",
   "version": "1.0.0",
-  "description": "Simple object transformer",
+  "description": "Transform flat JS objects according to Rules specified",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register lib/**/*.spec.js",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
   },
-  "keywords": [],
+  "keywords": [
+    "utility",
+    "javascript",
+    "object",
+    "transformation"
+  ],
   "author": "Eldar Aliyev <eldar.aliyev8@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeldar/simple-object-transformer.git"
+  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
