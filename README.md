@@ -33,6 +33,14 @@ Special notes
 -------------
 To use it as a library you should add "stage-0" preset to your babel configuration,
  because of object destructuring being used in the code.
+ 
+TODO
+----
+* add build step to create a UMD package
+* add examples
+* implement 'undefined' rule.
+* prepare and publish npm package
+* add eslint
 
 Author
 ------
