@@ -35,12 +35,12 @@ describe('transformer()', () => {
 describe('transformerFactory()', () => {
   // $FlowIgnore
   it('creates a function', () => {
-    const convert = transformerFactory(RULES);
-    expect(convert).to.be.a.function; // eslint-disable-line no-unused-expressions
+    const transformer = transformerFactory(RULES);
+    expect(transformer).to.be.a.function; // eslint-disable-line no-unused-expressions
   });
   it('created transformer converts source into target according to provided rules', () => {
-    const convert = transformerFactory(RULES);
-    const target = convert(SOURCE);
+    const transformer = transformerFactory(RULES);
+    const target = transformer(SOURCE);
     expect(target).to.be.deep.equal(EXPECTED_TARGET);
   });
 });

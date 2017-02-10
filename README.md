@@ -55,8 +55,8 @@ const SOURCE = Object.freeze({
 });
 
 // create a transformer based on the rules, specified as argument
-const convert = transformerFactory(RULES);
-const target = convert(SOURCE);
+const transformer = transformerFactory(RULES);
+const target = transformer(SOURCE);
 
 console.log(target); // { id: 123, name: 'John', fullName: 'John Doe' }
 ```
