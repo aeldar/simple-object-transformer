@@ -32,7 +32,32 @@ Import module functions from __src__ directory of the package, instead of a defa
 
 Examples
 --------
-TODO (see tests)
+
+```javascript
+// const transformerFactory = require('simple-object-transformer').transformerFactory;
+import { transformerFactory } from 'simple-object-transformer';
+
+const RULES = Object.freeze({
+  id: 'productId',
+  name: 'firstName',
+  fullName: (context) => `${context.firstName} ${context.lastName}`,
+});
+
+const SOURCE = Object.freeze({
+  productId: 123,
+  firstName: 'John',
+  lastName: 'Doe',
+  trash: 555,
+});
+
+// create a transformer based on the rules, specified as argument
+const convert = transformerFactory(RULES);
+const target = convert(SOURCE);
+
+console.log(target); // { id: 123, name: 'John', fullName: 'John Doe' }
+```
+
+For more examples see tests.
 
 Special notes
 -------------
