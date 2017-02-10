@@ -1,0 +1,16 @@
+[ignore]
+.*/node_modules/react-motion/.*
+.*/node_modules/fbjs/.*
+.*/node_modules/editions/.*
+
+[include]
+
+[libs]
+
+[options]
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue
+suppress_comment=\\(.\\|\n\\)*\\$FlowIgnore
