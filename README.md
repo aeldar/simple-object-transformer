@@ -10,12 +10,13 @@ How to use
 
 _Rules_ is an object with property names equals to the target property name,
 and the value is one of:
+
 1. String - then it is considered the property name of the source object,
  and should be copied into the target **as is** to specified target property (same
- as rule's name);
+ as rule's name).
 2. Function - then this function will be applied to the source object and optional
  property name, and the result will be assigned to the target's property (same
- as rule's name);
+ as rule's name).
 3. TODO: null|undefined - just copy the value from the same source's property.
 
 The lib exports __converterFactory__ by default, which allows partial application.
