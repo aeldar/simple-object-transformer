@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Eldar Aliyev <eldar.aliyev8@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
