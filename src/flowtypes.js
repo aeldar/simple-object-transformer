@@ -14,6 +14,6 @@ type Rules = {
   [name: TargetFieldName]: Rule
 };
 
-export type Converter = (rules: Rules, source: Source) => Target;
-type ConverterPartial = (source: Source) => Target;
-export type ConverterFactory = (rules: Rules) => ConverterPartial;
+export type Transformer = (rules: Rules, source: Source) => Target;
+type TransformerPartial = (source: Source) => Target;
+export type TransformerFactory = (rules: Rules) => TransformerPartial;

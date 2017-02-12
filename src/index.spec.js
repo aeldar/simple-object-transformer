@@ -1,8 +1,6 @@
-// @flow
-
 import { expect } from 'chai';
 
-import { transformerFactory, transformer } from '../dist/index';
+import { transformerFactory, transformer } from './index';
 
 const RULES = Object.freeze({
   id: 'productId',
