@@ -4,12 +4,15 @@
   "plugins": [
     "import",
     "mocha",
-    "chai-expect"
+    "chai-friendly"
   ],
   "env": {
     "mocha": true
   },
   "rules": {
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }]
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }],
+
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2
   }
 }
