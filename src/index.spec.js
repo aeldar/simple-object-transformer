@@ -7,7 +7,7 @@ import { transformerFactory, transformer } from '../dist/index';
 const RULES = Object.freeze({
   id: 'productId',
   name: 'firstName',
-  fullName: (context) => `${context.firstName} ${context.lastName}`,
+  fullName: context => `${context.firstName} ${context.lastName}`,
 });
 
 const SOURCE = Object.freeze({
@@ -35,12 +35,12 @@ describe('transformer()', () => {
 describe('transformerFactory()', () => {
   // $FlowIgnore
   it('creates a function', () => {
-    const transformer = transformerFactory(RULES);
-    expect(transformer).to.be.a.function; // eslint-disable-line no-unused-expressions
+    const tformer = transformerFactory(RULES);
+    expect(tformer).to.be.a.function; // eslint-disable-line no-unused-expressions
   });
   it('created transformer converts source into target according to provided rules', () => {
-    const transformer = transformerFactory(RULES);
-    const target = transformer(SOURCE);
+    const tformer = transformerFactory(RULES);
+    const target = tformer(SOURCE);
     expect(target).to.be.deep.equal(EXPECTED_TARGET);
   });
 });

@@ -72,7 +72,6 @@ To use it as a library you should add "stage-0" preset to your babel configurati
 TODO
 ----
 * implement 'undefined' rule.
-* add eslint
 
 Author
 ------
