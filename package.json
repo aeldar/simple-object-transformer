@@ -1,13 +1,13 @@
 {
   "name": "simple-object-transformer",
   "title": "Simple Object Transformer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Transform flat JS objects according to Rules specified",
   "main": "dist/index.js",
   "scripts": {
     "init": "mkdir dist",
     "clean": "rm -rf dist",
-    "prebuild": "npm run clean && npm run init",
+    "prebuild": "npm run lint && npm run clean && npm run init",
     "build:commonjs": "babel src/index.js -o dist/index.js",
     "build:umd": "browserify src/index.js -t babelify --outfile dist/index.umd.js --standalone SimpleObjectTransformer",
     "build": "npm run build:commonjs && npm run build:umd",
