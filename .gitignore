@@ -7,6 +7,9 @@ npm-debug.log*
 # packages
 node_modules/
 
+# coverage
+.nyc_output/
+
 # IDEs
 .idea/
 

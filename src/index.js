@@ -1,6 +1,6 @@
 // @flow
 
-import type { TransformerFactory, Transformer } from './flowtypes';
+import type { TransformerFactory, Transformer } from './index.js.flow';
 
 
 export const transformer: Transformer = (rules, source) =>
