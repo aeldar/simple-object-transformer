@@ -12,7 +12,7 @@
     "build:umd": "browserify src/index.js -t babelify --outfile dist/index.umd.js --standalone SimpleObjectTransformer",
     "build": "npm run build:commonjs && npm run build:umd",
     "test": "NODE_ENV=test mocha --compilers js:babel-register src/**/*.spec.js",
-    "coverage:debug": "NODE_ENV=test nyc npm test",
+    "coverage:show": "NODE_ENV=test nyc npm test",
     "coverage": "NODE_ENV=test nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "lint": "eslint src"
