@@ -1,7 +1,7 @@
 {
   "name": "simple-object-transformer",
   "title": "Simple Object Transformer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Transform flat JS objects according to Rules specified",
   "main": "dist/index.js",
   "scripts": {
