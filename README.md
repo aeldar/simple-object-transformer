@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/aeldar/simple-object-transformer.svg?branch=master)](https://travis-ci.org/aeldar/simple-object-transformer)
 [![npm version](https://badge.fury.io/js/simple-object-transformer.svg)](https://badge.fury.io/js/simple-object-transformer)
+[![Coverage Status](https://coveralls.io/repos/github/aeldar/simple-object-transformer/badge.svg?branch=master)](https://coveralls.io/github/aeldar/simple-object-transformer?branch=master)
 
 [![NPM](https://nodei.co/npm/simple-object-transformer.png)](https://nodei.co/npm/simple-object-transformer/)
 
