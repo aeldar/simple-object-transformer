@@ -2,6 +2,7 @@
 [![npm version](https://badge.fury.io/js/simple-object-transformer.svg)](https://badge.fury.io/js/simple-object-transformer)
 [![Coverage Status](https://coveralls.io/repos/github/aeldar/simple-object-transformer/badge.svg?branch=master)](https://coveralls.io/github/aeldar/simple-object-transformer?branch=master)
 [![Dependencies Status](https://david-dm.org/aeldar/simple-object-transformer.svg)](https://david-dm.org/aeldar/simple-object-transformer)
+[![NSP Status](https://nodesecurity.io/orgs/ypsilon/projects/8dcd98f0-333f-4d63-9d2d-84358fe39326/badge)](https://nodesecurity.io/orgs/ypsilon/projects/8dcd98f0-333f-4d63-9d2d-84358fe39326)
 
 [![NPM](https://nodei.co/npm/simple-object-transformer.png)](https://nodei.co/npm/simple-object-transformer/)
 
