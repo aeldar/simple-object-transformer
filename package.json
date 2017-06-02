@@ -11,9 +11,9 @@
     "build:commonjs": "babel src/index.js -o dist/index.js",
     "build:umd": "browserify src/index.js -t babelify --outfile dist/index.umd.js --standalone SimpleObjectTransformer",
     "build": "npm run build:commonjs && npm run build:umd",
-    "test": "NODE_ENV=test mocha --compilers js:babel-register src/**/*.spec.js",
-    "coverage:show": "NODE_ENV=test nyc npm test",
-    "coverage": "NODE_ENV=test nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register src/**/*.spec.js",
+    "coverage:show": "cross-env NODE_ENV=test nyc npm test",
+    "coverage": "cross-env NODE_ENV=test nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "lint": "eslint src"
   },
@@ -40,15 +40,16 @@
     "babel-register": "^6.22.0",
     "babelify": "^7.3.0",
     "browserify": "^14.0.0",
-    "chai": "^3.5.0",
+    "chai": "^4.0.1",
     "coveralls": "^2.11.16",
+    "cross-env": "5.0.0",
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
-    "eslint-plugin-chai-friendly": "^0.2.0",
+    "eslint-plugin-chai-friendly": "^0.3.6",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-mocha": "^4.8.0",
-    "flow-bin": "^0.38.0",
+    "flow-bin": "^0.47.0",
     "mocha": "^3.2.0",
-    "nyc": "^10.1.2"
+    "nyc": "^11.0.1"
   }
 }
