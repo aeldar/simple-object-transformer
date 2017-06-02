@@ -9,6 +9,8 @@
 Simple Object Transformer
 =========================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/aeldar/simple-object-transformer.svg)](https://greenkeeper.io/)
+
 Declare Rules to transform flat JS object into another flat JS object.
  Useful for simple transformations between internal state objects
  and server requests/responses.
