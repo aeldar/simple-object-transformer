@@ -1,18 +1,20 @@
+Simple Object Transformer
+=========================
+
 [![Build Status](https://travis-ci.org/aeldar/simple-object-transformer.svg?branch=master)](https://travis-ci.org/aeldar/simple-object-transformer)
 [![npm version](https://badge.fury.io/js/simple-object-transformer.svg)](https://badge.fury.io/js/simple-object-transformer)
 [![Coverage Status](https://coveralls.io/repos/github/aeldar/simple-object-transformer/badge.svg?branch=master)](https://coveralls.io/github/aeldar/simple-object-transformer?branch=master)
 [![Dependencies Status](https://david-dm.org/aeldar/simple-object-transformer.svg)](https://david-dm.org/aeldar/simple-object-transformer)
 [![NSP Status](https://nodesecurity.io/orgs/ypsilon/projects/8dcd98f0-333f-4d63-9d2d-84358fe39326/badge)](https://nodesecurity.io/orgs/ypsilon/projects/8dcd98f0-333f-4d63-9d2d-84358fe39326)
+[![Greenkeeper badge](https://badges.greenkeeper.io/aeldar/simple-object-transformer.svg)](https://greenkeeper.io/)
 
 [![NPM](https://nodei.co/npm/simple-object-transformer.png)](https://nodei.co/npm/simple-object-transformer/)
 
-Simple Object Transformer
-=========================
 
 Declare Rules to transform flat JS object into another flat JS object.
  Useful for simple transformations between internal state objects
  and server requests/responses.
- 
+
 How to use
 ----------
 
@@ -72,7 +74,7 @@ Special notes
 To use it as a library you should add "stage-0" preset to your babel configuration,
  because of object destructuring being used in the code. Also you need
  babel's __transform-flow-strip-types__ plugin as the code uses flowtype.
- 
+
 TODO
 ----
 * implement 'undefined' rule.
