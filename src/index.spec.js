@@ -61,7 +61,7 @@ describe('transformerFactory()', () => {
   // $FlowIgnore
   it('creates a function', () => {
     const tformer = transformerFactory(RULES);
-    expect(tformer).to.be.a.function;
+    expect(typeof tformer).to.be.equal('function');
   });
   it('created transformer converts source into target according to provided rules', () => {
     const tformer = transformerFactory(RULES);
