@@ -4,6 +4,7 @@
   "version": "1.0.5",
   "description": "Transform flat JS objects according to Rules specified",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
     "init": "mkdir dist",
     "clean": "rm -rf dist",
