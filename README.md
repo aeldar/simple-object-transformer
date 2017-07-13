@@ -29,10 +29,10 @@ and the value is one of:
  as rule's name).
 3. TODO: null|undefined - just copy the value from the same source's property.
 
-The lib exports __converterFactory__ by default, which allows partial application.
+The lib exports __transformerFactory__ by default, which allows partial application.
 I.e. it takes _Rules_, and returns a _Converter_, that expects only _Source_ object.
 
-In addition, ordinary __converter__ could be imported by name. It expects both
+In addition, ordinary __transformer__ could be imported by name. It expects both
 _Rules_ and _Source_ objects as arguments.
 
 Usage with flowtypes
