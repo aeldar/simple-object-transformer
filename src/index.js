@@ -12,7 +12,7 @@ export const transformer: Transformer = (rules, source) =>
       case 'function':
         return { ...target, [name]: rule(source, name) };
       default:
-        throw new Error('Wrong transformer rule for property: ', name);
+        throw new Error(`Wrong transformer rule for property: ${name}`);
     }
   }, {});
 

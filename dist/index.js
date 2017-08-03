@@ -19,7 +19,7 @@ var transformer = exports.transformer = function transformer(rules, source) {
       case 'function':
         return _extends({}, target, _defineProperty({}, name, rule(source, name)));
       default:
-        throw new Error('Wrong transformer rule for property: ', name);
+        throw new Error('Wrong transformer rule for property: ' + name);
     }
   }, {});
 };
