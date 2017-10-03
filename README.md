@@ -2,6 +2,7 @@ Simple Object Transformer
 =========================
 
 [![Build Status](https://travis-ci.org/aeldar/simple-object-transformer.svg?branch=master)](https://travis-ci.org/aeldar/simple-object-transformer)
+[![Build status](https://ci.appveyor.com/api/projects/status/xntriortwirhr5q9?svg=true)](https://ci.appveyor.com/project/aeldar/simple-object-transformer)
 [![npm version](https://badge.fury.io/js/simple-object-transformer.svg)](https://badge.fury.io/js/simple-object-transformer)
 [![Coverage Status](https://coveralls.io/repos/github/aeldar/simple-object-transformer/badge.svg?branch=master)](https://coveralls.io/github/aeldar/simple-object-transformer?branch=master)
 [![Dependencies Status](https://david-dm.org/aeldar/simple-object-transformer.svg)](https://david-dm.org/aeldar/simple-object-transformer)
