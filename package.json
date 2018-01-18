@@ -50,7 +50,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-mocha": "^4.8.0",
     "flow-bin": "^0.60.1",
-    "mocha": "^4.0.0",
+    "mocha": "^5.0.0",
     "nyc": "^11.2.1"
   }
 }
