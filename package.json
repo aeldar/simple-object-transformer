@@ -12,7 +12,7 @@
     "build:commonjs": "babel src/index.js -o dist/index.js",
     "build:umd": "browserify src/index.js -t babelify --outfile dist/index.umd.js --standalone SimpleObjectTransformer",
     "build": "npm run build:commonjs && npm run build:umd",
-    "test": "cross-env NODE_ENV=test mocha --require babel-register src/**/*.spec.js",
+    "test": "cross-env NODE_ENV=test mocha --require babel-register src/**/*.spec.js; node .github/setup.js",
     "coverage:show": "cross-env NODE_ENV=test nyc npm test",
     "coverage": "cross-env NODE_ENV=test nyc npm test && nyc report --reporter=text-lcov | coveralls",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
@@ -48,7 +48,7 @@
     "eslint-config-airbnb-base": "^12.0.1",
     "eslint-plugin-chai-friendly": "^0.4.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-mocha": "^5.0.0",
+    "eslint-plugin-mocha": "^4.8.0",
     "flow-bin": "^0.65.0",
     "mocha": "^5.0.0",
     "nyc": "^11.2.1"
